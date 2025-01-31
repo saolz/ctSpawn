@@ -1,0 +1,34 @@
+Personal Cloud Storage with Nextcloud
+Overview: I successfully built a personal cloud storage solution using Nextcloud on a virtual machine (VM) running Linux Mint within VirtualBox. This setup enables seamless file access, synchronization, and collaboration across devices on the same network.
+
+Objective: The goal was to create a secure, private cloud storage solution that allows for easy file sharing, synchronization, and management, ensuring data privacy and control without relying on third-party cloud service providers.
+
+Project Details:
+
+Environment: Linux Mint running on a VirtualBox VM
+
+Software: Nextcloud 24.0.4, Apache2, MySQL, PHP 7.4
+
+Networking: Configured the VM with a static IP address to facilitate consistent access from devices on the same network
+
+Key Features:
+
+User Authentication: Set up user authentication and permissions to ensure secure access to cloud storage.
+
+File Synchronization: Enabled file synchronization across multiple devices using Nextcloud's desktop and mobile clients.
+
+Collaborative Tools: Integrated additional Nextcloud apps such as Calendar, Contacts, and Collabora Online for collaborative document editing.
+
+Backup and Recovery: Implemented regular automated backups of the Nextcloud data directory and MySQL database to an external storage device.
+
+Security Measures: Configured SSL/TLS encryption using a self-signed certificate to secure data transmission and implemented fail2ban to protect against brute-force attacks.
+
+Challenges and Solutions:
+
+Challenge: Ensuring data integrity and availability in case of VM or hardware failure. Solution: Set up a comprehensive backup and recovery strategy to minimize data loss and downtime.
+
+Challenge: Configuring the network to allow seamless access to the Nextcloud instance from all devices. Solution: Assigned a static IP to the VM and configured the router to forward traffic appropriately.
+
+Challenge: Implementing SSL/TLS encryption for secure data transmission. Solution: Generated a self-signed SSL certificate and configured Apache to use it, ensuring encrypted access to the Nextcloud instance.
+
+Outcome: The project resulted in a reliable and secure personal cloud storage solution, providing a centralized platform for file sharing, synchronization, and collaboration. This self-hosted setup ensures full control over data privacy and security, offering a robust alternative to commercial cloud services.
